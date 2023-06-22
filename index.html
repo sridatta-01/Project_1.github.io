@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/portfolio logo -1.jpg">
+    <title>PortFolio</title>
+</head>
+<body>
+    <header>
+    <div class="container">
+            <nav>
+                <div class="logo">PF<b>PROTFOLIO</b></div>
+            <ul class="navItems">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+                <div class="links">
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="container mt-5">
+                  <button id="loginButton" class="btn btn-primary">Log In</button>
+                  <button id="signupButton" class="btn btn-primary">Sign Up</button>
+                </div>
+              
+                <div id="loginModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <img src="./images/portfolio pic.jpg">
+                  </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="emailInput">Email address *</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="emailInput" placeholder="Enter email address">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="passwordInput">Password *</label>
+                        <div class="input-group">
+                          <input type="password" class="form-control" id="passwordInput" placeholder="Enter Password">
+                          <i class="fa fa-eye-slash toggle-password" data-target="passwordInput"></i>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="loginSubmitBtn">Log In</button>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="forgotPasswordBtn">Forgotten Password ?</button>
+                      </div>
+                      <div class="social-icons">
+                        <h6>or login with</h6>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              
+                <div id="signupModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <img src="./images/portfolio pic.jpg">
+                  </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="emailInput">Email address *</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="signupEmailInput" placeholder="Enter email address">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="passwordInput">Password *</label>
+                        <div class="input-group">
+                          <input type="password" class="form-control" id="signupPasswordInput" placeholder="Enter Password">
+                          <i class="fa fa-eye-slash toggle-password" data-target="signupPasswordInput"></i>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="passwordInput">Password *</label>
+                        <div class="input-group">
+                          <input type="password" class="form-control" id="signupPasswordInput1" placeholder="Re-Enter Password">
+                          <i class="fa fa-eye-slash toggle-password" data-target="signupPasswordInput1"></i>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="signupSubmitBtn">Sign Up</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+    </div>
+        </header>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">PF</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#academics">Academics</a></li>
+            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+            <li><a class="dropdown-item" href="#projects">Project</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="information">
+                <div class="cols cols0">
+                    <span class="topline">Hello</span>
+                    <h1>I'm <span class="multiText"></span></h1>
+                    <p>I am a unique individual, constantly evolving and learning, with a deep passion for growth and exploration.</p>
+                </div>
+            <div class="cols cols1">
+                <div class="image">
+                    <img src="./images/computer.png">
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <div class="about">
+                <h2 id="about">ABOUT :</h2>
+                <span class="multitext1"></span>
+                <span class="multitext2"></span>
+                <span class="multitext3"></span>
+                <span class="multitext4"></span>  
+                <span class="multitext5"></span>   
+                <span class="multitext6"></span>   
+                </div>
+            <div id="academics_me">
+                <h2 id="academics">ACADEMICS : </h2>
+                <ul>
+                    <li>
+                        <p>I have completed my B.Tech at GUDLAVALLERU ENGINEERING COLLEGE(GUDLAVALLERU)
+                        in the Stream of MECHANICAL ENGINEERING from the Academic Year (2019-2022) with 8.48 CGPA.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>I have completed my DIPLOMA at SRI VASAVI INSTITUTE OF ENGINEERING AND TECHNOLOGY (NANDAMURU)
+                        in the Stream of MECHANICAL ENGINEERING from the Academic Year (2015-2019) with 74.61 PERCENTAGE.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>I have completed my 10th CLASS at KOMMAREDDY HIGH SCHOOL(BANTUMILLI)
+                           from the Academic Year (2014-2015) with 8.2 CGPA.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h2 id="skills">SKILLS :</h2>
+                <div class="multilineText"></div>
+            </div>
+            <div class="project">
+                <h2 id="projects">PROJECTS :</h2>
+                <div class="project1">
+                    <h3>Project 1 : </h3>
+                    <div id="multilinetext"></div>
+                  </div>
+                  <div class="project2">
+                    <h3>Project 2 : </h3>
+                    <p>
+                        Project Title: Java Ecommerce Code in Eclipse </p>
+                        
+                      <p>  Project Objectives:</p>
+                        
+                        <p>Develop a functional ecommerce system using Java programming language in Eclipse.</p>
+                        <p>Implement features to enable user registration, product browsing, shopping cart management, and order processing.</p>
+                        <p>Ensure proper handling of yes/no or 1/2/3 conditions throughout the system.</p>
+                        <p>Create an intuitive user interface for easy navigation and interaction.</p>
+                        <p>Incorporate appropriate security measures to protect user information and transactions.</p>
+                        <p>Provide robust error handling and validation mechanisms to enhance system reliability.</p>
+                        <p>Optimize the code for efficient performance and scalability.</p>
+                        <p>Deliver a fully functional ecommerce application that meets the specified requirements.</p>
+                        <p>Project Scope:</p>
+
+                        <p>The project will focus on creating an ecommerce system using Java in Eclipse with the following key components and functionalities:</p>
+                        <p>User Registration: Allow users to create accounts, login, and manage their profiles.</p>
+                        <p>Product Catalog: Provide a comprehensive catalog of products with details and images.</p>
+                        <p>Product Search and Filtering: Enable users to search for products based on different criteria and apply filters.</p>
+                        <p>Shopping Cart Management: Allow users to add products to the cart, modify quantities, and remove items.</p>
+                        <p>Order Processing: Facilitate the checkout process, including address input, payment integration, and order confirmation.</p>
+                        <p>Yes/No or 1/2/3 Conditions: Implement conditions throughout the system to handle user choices or preferences using appropriate logic and user interface interactions.</p>
+
+                        <p>Project Deliverables:</p>
+                        
+                        <p>Complete Java code files for the ecommerce system.</p>
+                        <p>User interface designs and layouts.</p>
+                        <p>Database schema and scripts, if applicable.</p>
+                        <p>Documentation, including a project report and user manual.</p>
+                        <p>Project Resources:</p>
+                        
+                        <p>Development Tools: Eclipse IDE for Java development.</p>
+                        <p>Programming Language: Java.</p>
+                        <p>Frameworks and Libraries: Utilize appropriate Java libraries and frameworks for enhanced functionality.</p>
+                       </div>
+                  <div class="project3">
+                    <h3>Project 3 : </h3>
+                    <p>Project Title: Creation of Customer, Seller, Employer, Admin, and Products Data using MySQL Workbench</p>
+
+                       <p> Project Objectives:</p>
+                        
+                        <p>Design and create a robust and scalable database schema for managing customer, seller, employer, admin, and products data.</p>
+                        <p>Populate the database with sample data to simulate real-world scenarios and test system functionality.</p>
+                        <p>Develop a user-friendly interface for CRUD operations on the data, including adding, updating, and deleting records.</p>
+
+                        <p>Project Scope:</p>
+                        
+                        <p>Designing the database schema to accommodate the entities: Customer, Seller, Employer, Admin, and Products.</p>
+                        <p>Defining relationships between entities, such as one-to-many and many-to-many relationships.</p>
+                        <p>Creating tables, columns, and constraints based on the designed schema.</p>
+                        <p>Developing user interfaces for different user roles (customer, seller, employer, and admin) to interact with the data.</p>
+                        <p>Testing the functionality of the database and user interfaces.</p>
+                        <p>Project Deliverables:</p>
+                        
+                        <p>MySQL database populated with sample data.</p>
+                        <p>User interfaces for customer, seller, employer, and admin operations.</p>
+                        <p>Source code and scripts for the database and user interfaces.</p>
+
+                        <p>Project Resources:</p>
+                       <p>MySQL Workbench: A tool for designing and managing the database schema.</p>
+                        <p>Sample data for populating the database.</p>
+                  </div>
+            </div>
+            <div class="contact_me">
+                <h2 id="contact">Contact :</h2>
+                <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+                <ul>
+                    <li>Email: sridatta.006@gmail.com</li>
+                    <li>Phone: 6300234108</li>
+                </ul>
+            </div>
+            <footer>
+                <div class="footer-menu">
+                    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+                    <div class="link">
+                        <a href="#"><i class="fa fa-linkedin"></i>Linkedin</a>
+                        <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                        <a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+                    </div>
+                    </div>
+                </footer>
+        </div>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Scroll to Top">▲</button>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

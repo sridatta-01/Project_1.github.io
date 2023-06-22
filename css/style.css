@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800|Poppins:400,500,600,700|Yellowtail&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* start of header */
+.container {
+    display:contents;
+    width:100%;
+    background-color: white;
+}    
+nav {
+    display:flex ;
+    width: 100%;
+    background-color: rgb(22, 237, 7);
+    height: 80px;
+    line-height: 80px;
+    justify-content:space-around;
+}
+.logo{
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ff0458;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+b{
+    font-size:35px ;
+    color: #440cee;
+    margin-left: 25px;
+}
+.navItems {
+    display: flex;
+} 
+.navItems li{
+    list-style: none;
+    margin: 0 8px;
+}
+.navItems li a {
+    font-size: 17px;
+    color:#3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a,
+.links a:hover{
+    color: #7f00ff;
+}
+.links a {
+    font-size: 30px;
+    color: #3d535f;
+    margin: 10px 5px;
+}
+/* log-in button */
+#loginButton{
+    margin-top: 20px;
+    width:100px ;
+    height: 40px;
+    background: rgb(8, 27, 238);
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .8s ease;
+}
+
+#loginButton {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.6s ease;
+}
+#loginButton:hover { 
+    background-color: orange;
+}
+/* sign-up button */
+#signupButton {
+    margin-top: 20px;
+    width:100px ;
+    height: 40px;
+    background: rgb(27, 8, 238);
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .8s ease;
+    margin-left: -30px;
+}
+#signupButton {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.6s ease;
+}
+.btn:hover { 
+    background-color: orange;
+}
+/* log-in and sign-up form */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 500px;
+}
+.modal-header img {
+  width: 450px;
+}
+.form-group{
+  height: 115px;
+}
+#loginSubmitBtn {
+  width: 480px;
+}
+#signupSubmitBtn {
+  width: 480px;
+}
+#forgotPasswordBtn{
+  margin-top: -155px;
+  width: 480px;
+}
+.social-icons a:hover{
+  color: #7f00ff;
+}
+.social-icons a {
+  font-size: 30px;
+  color: #3d535f;
+}
+label{
+  margin-bottom: 0px;
+}
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 460px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }
+/* Social media icons */
+.social-icons {
+    margin-top: -150px;
+    display: block;
+    margin-left: 190px;
+}
+.social-icons h6{
+  padding-top: 25px;
+}
+.social-icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+.input-group {
+    position: relative;
+}
+.input-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+    /* end of header */
+.information {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(45deg, #727272, transparent);
+}
+.information::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background:linear-gradient(45deg,#ffee00,rgb(238, 8, 8));
+    animation: object1 6s linear infinite;
+}
+.information::after{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 35%;
+    top: 15%;
+    background:linear-gradient(45deg,#ffee00,rgb(238, 8, 8));
+    animation: object2 3s linear infinite;
+}
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50%{
+        left: 35%;
+        top: 14%;
+    }
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: brown;
+}
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: chocolate;
+}
+.cols h1{
+    display: block;
+    font-size: 70px;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multiText {
+    color: #440cee;
+    text-transform: capitalize;
+}
+.multitext1,
+.multitext2,
+.multitext3,
+.multitext4,
+.multitext5,
+#multilinetext,
+.multilineText {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:justify;
+    padding-bottom: 20px;
+}
+.cols p{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image img {
+    position:relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    top: 30px;
+    right: -80px;
+    animation:computer 10s linear infinite;
+}
+@keyframes computer {
+    50% {
+        top: 28px;
+        right: -65px;
+    }
+}
+.listing{
+    position: absolute;
+}
+.about {
+  padding: 0 10%;
+  z-index: 5;
+}
+.about h2{
+    font-size:40px;
+    color: rgb(131, 0, 254);
+    background: rgb(14, 203, 67);
+    z-index: 5;
+}
+.about p {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:justify;
+    z-index: 5;
+}
+#academics_me {
+  background: white;
+  padding: 0 10%;
+}
+#academics_me h2{
+    font-size:40px;
+    color: rgb(49, 2, 93);
+    background-color: #66c89f;
+}
+#academics_me ul li {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f;
+    letter-spacing: 1px;
+}
+#academics_me ul li p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align:justify;
+}
+.skill {
+  background: linear-gradient(45deg, rgb(48 207 42), transparent);
+    padding: 0 10%;
+}
+.skill h2{
+    font-size:40px;
+    color: rgb(248, 4, 155);
+}
+.skill p {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:justify;
+}
+.project {
+  background: white;
+    padding: 0 10%;
+}
+.project h2{
+    font-size:40px;
+    color: rgb(219, 6, 238);
+    background-color: #02eeff;
+}
+.project p {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:justify;
+}
+.contact_me {
+  background: linear-gradient(45deg, #9efffc, transparent);
+    padding: 0 10%;
+}
+.contact_me h2{
+    font-size:38px;
+    color: rgb(207, 238, 6);
+    background-color: #0206ff;
+}
+.contact_me p {
+    display: block;
+    font-size: 18px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:center;
+}
+.contact_me ul li {
+    display: block;
+    font-size: 18px;
+    color:#3d535f;
+    letter-spacing: 1px;
+    text-align:center;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+  .dropdown {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+    .information {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    .cols {
+      width: 90%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .cols0 {
+      width: 90%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .image img {
+      width: 100%;
+      position: static;
+      margin-top: 40px;
+    }
+    .links a {
+      display: none;
+    }
+    b {
+      font-size: 25px;
+      color: #440cee;
+      margin-left: 25px;
+    }
+    .modal-header img {
+      width: 390px;
+      margin-right: 29px;
+  }
+  #loginSubmitBtn {
+    width: 370px;
+}
+#signupSubmitBtn {
+  width: 370px;
+}
+#forgotPasswordBtn {
+  margin-top: -155px;
+  width: 370px;
+}
+.social-icons {
+  margin-top: -150px;
+  display: block;
+  margin-left: 190px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 450px;
+}
+    #signupButton {
+      margin-top: 20px;
+      width: 100px;
+      height: 40px;
+      background: rgb(27, 8, 238);
+      border: none;
+      font-size: 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      transition: .8s ease;
+      margin-left: -25px;
+  }
+  #loginButton{
+    margin-top: 20px;
+    width:100px ;
+    height: 40px;
+    background: rgb(8, 27, 238);
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .8s ease;
+    margin-right: 20px;
+}
+}
+  
+@media (max-width: 786px) {
+    .logo {
+      font-size: 24px;
+    }
+    ul.navItems {
+      display: none !important;
+    }
+    .links a {
+      font-size: 24px;
+    }
+    .modal-content {
+      width: 90%;
+    }
+    .social-icons {
+      margin-top: -120px;
+    }
+  
+    .input-group {
+      margin-bottom: 20px;
+    }
+  
+    .input-group i {
+      right: 5px;
+    }
+    b {
+      font-size: 28px;
+      color: #440cee;
+    }
+    .modal-header img {
+      width: 330px;
+  }
+  #loginSubmitBtn {
+    width: 370px;
+}
+#signupSubmitBtn {
+  width: 370px;
+}
+#forgotPasswordBtn {
+  margin-top: -155px;
+  width: 370px;
+}
+.social-icons {
+  margin-top: -150px;
+  display: block;
+  margin-left: 140px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 330px;
+}
+    #signupButton {
+      margin-top: 20px;
+      width: 60px;
+      height: 40px;
+      background: rgb(27, 8, 238);
+      border: none;
+      font-size: 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      transition: .8s ease;
+      margin-left: -25px;
+  }
+  #loginButton{
+    margin-top: 20px;
+    width:60px ;
+    height: 40px;
+    background: rgb(8, 27, 238);
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .8s ease;
+    margin-right: 20px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 320px;
+}
+    .information::before {
+      display: none;
+    }
+  
+    .information::after {
+      display: none;
+    }
+  
+    .listing::before {
+      display: none;
+    }
+  
+    .listing::after {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 486px) {
+    .logo {
+      font-size: 18px;
+    }
+    ul.navItems {
+      display: none;
+    }
+    .links a {
+      display: none;
+    }
+    b {
+      font-size: 27px;
+      color: #440cee;
+    }
+    .modal-content {
+      width: 80%;
+    }
+    .social-icons {
+      margin-top: -120px;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .input-group i {
+      right: 5px;
+    }
+    .cols {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .cols0 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .topline {
+      font-size: 28px;
+    }
+  
+    .cols h1 {
+      font-size: 50px;
+    }
+  
+    .multitext {
+      font-size: 18px;
+    }
+  
+    .cols p {
+      font-size: 18px;
+    }
+  
+    .image img {
+      width: 100%;
+      position: static;
+      margin-top: 40px;
+    }
+  
+    .about h2 {
+      font-size: 30px;
+    }
+  
+    .about p {
+      font-size: 18px;
+    }
+    .modal-header img {
+      width: 250px;
+  }
+  #loginSubmitBtn {
+    width: 270px;
+}
+#signupSubmitBtn {
+  width: 270px;
+}
+#forgotPasswordBtn {
+  margin-top: -155px;
+  width: 270px;
+}
+.social-icons {
+  margin-top: -150px;
+  display: block;
+  margin-left: 100px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 260px;
+}
+    #signupButton {
+      margin-top: 20px;
+      width: 60px;
+      height: 40px;
+      background: rgb(27, 8, 238);
+      border: none;
+      font-size: 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      transition: .8s ease;
+      margin-left: -25px;
+  }
+  #loginButton{
+    margin-top: 20px;
+    width:60px ;
+    height: 40px;
+    background: rgb(8, 27, 238);
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .8s ease;
+    margin-right: 20px;
+}
+    #academics_me h2 {
+      font-size: 30px;
+    }
+  
+    #academics_me ul li {
+      font-size: 18px;
+    }
+  
+    #academics_me ul li p {
+      font-size: 18px;
+    }
+  
+    .skill h2 {
+      font-size: 30px;
+    }
+  
+    .skill p {
+      font-size: 18px;
+    }
+  
+    .project h2 {
+      font-size: 30px;
+    }
+  
+    .project p {
+      font-size: 18px;
+    }
+  
+    .contact_me h2 {
+      font-size: 30px;
+    }
+  
+    .contact_me p {
+      font-size: 16px;
+    }
+  
+    .contact_me ul li {
+      font-size: 16px;
+    }
+  }
+.link a{
+    padding: 0px 13px;
+}
+.footer-menu {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
+}
+
+#scrollBtn:hover {
+  opacity: 0.7;
+}
